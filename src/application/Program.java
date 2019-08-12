@@ -14,10 +14,7 @@ public class Program {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-
-		//Department department = new Department(1, "Livros"); 
-		//Seller seller = new Seller(21, "Carlos", "carlos@teste.com", new Date(), 6000.0, department);
-		
+	
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		System.out.println("===== teste 1 Seller FindById ======");
 		Seller seller = sellerDao.findById(3);
